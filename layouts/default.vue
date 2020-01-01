@@ -1,7 +1,9 @@
 <template>
   <div>
     <app-header></app-header>
+    <transition enter-active-class="animated fadeInLeftBig slow" mode="out-in" leave-active-class="animated fadeOutRightBig slow">
     <nuxt />
+    </transition>
     <app-footer></app-footer>
   </div>
 </template>

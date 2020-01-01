@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
       <a href="/" class="navbar-brand p-white">
         <span v-if="isAdmin">Blog Admin</span>
@@ -15,7 +15,7 @@
               v-if="!isAdmin"
               tag="a"
               exact
-              active-class="border-bottom actived text-primary border-dark"
+              active-class="border-bottom actived text-info border-light"
               to="/"
               class="nav-link"
             >HOME</nuxt-link>
@@ -23,7 +23,7 @@
               v-if="isAdmin"
               tag="a"
               exact
-              active-class="border-bottom actived text-primary border-dark"
+              active-class="border-bottom actived text-info border-light"
               to="/admin"
               class="nav-link"
             >ADMIN HOME</nuxt-link>
@@ -32,17 +32,17 @@
             <nuxt-link
               v-if="isAdmin"
               tag="a"
-              active-class="border-bottom text-primary actived border-dark"
+              active-class="border-bottom text-info actived border-light"
               to="/admin/news-post"
               class="nav-link"
-            >NEWS EDIT</nuxt-link>
+            >NEW POST</nuxt-link>
           </li>
           <li class="nav-item">
             <nuxt-link
               v-if="isAdmin"
               tag="a"
               exact
-              active-class="border-bottom actived text-primary border-dark"
+              active-class="border-bottom actived text-info border-light"
               to="/"
               class="nav-link"
             >HOME</nuxt-link>
@@ -72,11 +72,11 @@ export default {
 @keyframes active {
   from {
     opacity: 0;
-    color: black;
+    color: #17c2b3;
   }
   to {
     opacity: 1;
-    color: #007bff;
+    color: #17a2b8;
   }
 }
 </style>

@@ -12,6 +12,9 @@
 <script>
 import { mapGetters } from 'vuex';
 export default {
+    head:{
+    title: 'Haber'
+  },
 data(){
     return{
         id: this.$route.params.id,

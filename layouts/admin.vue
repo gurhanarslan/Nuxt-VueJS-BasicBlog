@@ -1,7 +1,9 @@
 <template>
   <div>
     <app-header :isAdmin="true"></app-header>
+    <transition enter-active-class="animated fadeInLeftBig slow" mode="out-in" leave-active-class="animated fadeOutRightBig slow">
     <nuxt />
+    </transition>
     <app-footer :isAdmin="true"></app-footer>
   </div>
 </template>
@@ -20,7 +22,8 @@ export default {
 
 <style>
 body{
-  font-family: sans-serif
+  font-family: sans-serif;
+  background-color: whitesmoke;
 }
 </style>
 

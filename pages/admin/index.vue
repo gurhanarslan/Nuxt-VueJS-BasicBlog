@@ -1,7 +1,7 @@
 <template>
 <div>
     <div v-if="getNews.length==0" class="text-center">Loading..</div>
-         <app-news v-for="item in getNews" :news="item"></app-news>
+         <app-news :isAdmin="true" v-for="item in getNews" :news="item"></app-news>
 </div>
      
 </template>
